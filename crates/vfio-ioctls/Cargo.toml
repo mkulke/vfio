@@ -28,6 +28,10 @@ vfio-bindings = { version = "0.4.0", path = "../vfio-bindings" }
 vm-memory = { version = "0.14.0", features = ["backend-mmap"] }
 vmm-sys-util = "0.12.1"
 # mshv-bindings = { git = "https://github.com/rust-vmm/mshv", tag = "v0.3.0", features = ["with-serde", "fam-wrappers"], optional  = true }
-mshv-bindings = { git = "https://github.com/mkulke/mshv", branch = "v0.3.0-mgns", features = ["with-serde", "fam-wrappers"], optional  = true }
+#mshv-bindings = { git = "https://github.com/mkulke/mshv", branch = "v0.3.0-mgns", features = ["with-serde", "fam-wrappers"], optional  = true }
+# mshv-bindings = { path = "../../../mshv/mshv-bindings", features = ["with-serde", "fam-wrappers"], optional  = true }
+mshv-bindings = { git = "https://github.com/mkulke/mshv", rev = "629ecae", features = ["with-serde", "fam-wrappers"], optional  = true }
 #mshv-ioctls = { git = "https://github.com/rust-vmm/mshv", tag = "v0.3.0", optional  = true }
-mshv-ioctls = { git = "https://github.com/mkulke/mshv", branch = "v0.3.0-mgns", optional  = true }
+#mshv-ioctls = { git = "https://github.com/mkulke/mshv", branch = "v0.3.0-mgns", optional  = true }
+#mshv-ioctls = { path = "../../../mshv/mshv-ioctls", optional  = true }
+mshv-ioctls = { git = "https://github.com/mkulke/mshv", rev = "629ecae", optional  = true }
